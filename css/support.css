@@ -1,0 +1,97 @@
+
+body {
+    font-size: 100%;
+    background-color: white;
+	width: 100%;
+    margin: 0 auto;
+	display: grid;
+	height: 100vh;
+	
+}
+
+header h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0;
+}
+
+h1#main_text{
+	font-size: 150%;
+	margin-bottom: .5em;
+	text-align: center;
+	font-size: xx-large;
+
+	
+}
+
+.form_holder{
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+}
+form{
+	background-color: rgb(197, 201, 162);
+	padding: 50px;
+	border: 5px solid rgb(252, 179, 179);
+	border-radius: 50px;
+	font-size: large;
+	width: 50%;
+	margin: 0, auto;
+	align-self: center;
+
+}
+
+label {
+    float: left;
+    width: 9em;
+	background-color: rgb(233, 254, 254);
+	padding-top: 10px;
+}
+
+input, select {
+    width: 20em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+
+	border: 2px solid rgb(242, 191, 242);
+	border-radius: 5px;
+	height: 30px;
+	width: 30%;
+}
+
+#question{
+	width: 20em;
+	margin-left: 1em;
+    margin-bottom: 1em;
+
+	border: 2px solid rgb(242, 191, 242);
+	border-radius: 5px;
+}
+.setting_buttons{
+	margin-top: 10px;
+	margin-left: 0;
+	width: 150px;
+	height: 40px;
+	border-radius: 50px;
+}
+
+.main_button{
+	margin-top: 70px;
+	margin-left: 0;
+	width: 150px;
+	height: 40px;
+	border-radius: 50px;
+}
+
+.setting_buttons:hover{
+	background-color: rgb(174, 192, 142);
+}
+.main_button:hover{
+	background-color: rgb(174, 192, 142);
+}
+
+.error { color: red; }
+.show { display: block; }
+.hide { display: none; }

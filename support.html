@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Support</title>
+<link rel="stylesheet" type="text/css" href="css/support.css">
+<link rel="stylesheet" href="css/navigation.css">
+</head>
+<body>
+	<header>
+		<h1>SUPPORT</h1>
+		<nav  class="nav_box">
+			<ul class="nav_container">
+				<li class="nav"><a href="shop.html" target="_blank">SHOP</a></li>
+				<li  class="nav"><a href="support.html" target="_blank">SUPPORT</a></li>
+				</ul>
+			</nav>
+		</header>
+	<main>
+		<div class="form_holder">
+			<form id="registration_form" action="regiater_account.php" method="get"
+				name="registration_form" class="show">
+
+				<label for="first_name">First Name:</label>
+				<input type="text" name="first_name" id="first_name">
+				<span id="first_name_error">&nbsp;</span><br>
+				<label for="email">E-Mail:</label>
+					<input type="text" name="email" id="email">
+					<span id="email_error">&nbsp;</span><br>
+				<label for="verify">Verify Email:</label>
+					<input type="email" name="verify" id="verify">
+					<span id="verify_error">&nbsp;</span><br>
+						
+				<label for="question">Question:</label>
+					<textarea name="question" id="question" cols="5" rows="5"></textarea >
+				<div><input type="button" id="register" value="Register" class="setting_buttons, main_button"></div>
+				<div><input type="button" id="reset" value="Reset" class="setting_buttons"></div>
+			</form>
+			<section id="registration_result" class="hide">
+				<p>Congratulations! Your request for support has been submitted.</p>
+				<p>Our customer service representative will email you shortly!</p>
+				<input type="button" id="back" value="Back">
+			</section>
+
+			<script type="text/javascript" src="js/input_validate.js"></script>
+			<script type="text/javascript" src="js/messages.js"></script>
+			<script type="text/javascript" src="js/navigate.js"></script>
+			<script type="text/javascript" src="js/validate.js"></script>
+			<script type="text/javascript" src="js/support.js"></script>
+		</div>
+		
+	</main>
+</body>
+</html>

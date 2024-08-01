@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shannon Shop</title>
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+    <link rel="stylesheet" href="css/navigation.css">
+</head>
+<body>
+	<!--Navigation-->
+    <header>
+        <h1>SHANNON SHOP</h1>
+        <nav  class="nav_box">
+            <ul class="nav_container">
+                <li class="nav"><a href="shop.html" target="_blank">SHOP</a></li>
+                <li  class="nav"><a href="support.html" target="_blank">SUPPORT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Part of adding to cart the clothes-->
+	<main>
+		<section id="shop">
+			<div class="item" id="one">
+				<img src="images/bgdress.png" alt="Item 1">
+				<h5>Beige Dress</h5>
+				<p class="price">$150</p>
+                <div class="sizes">
+                    <label for="cars">Size:</label>
+                    <select name="sizes" id="sizes">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                </div>
+				<button onclick="addItemToCart(0)" class="buttons">Buy Now</button>
+			</div>
+			<div class="item" id="two">
+				<img src="images/bljacket.png" alt="Item 2">
+				<h5>Black Jacket</h5>
+				<p class="price">$200</p>
+                <div class="sizes">
+                    <label for="cars">Size:</label>
+                    <select name="sizes" id="sizes">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                </div>
+				<button onclick="addItemToCart(1)" class="buttons">Buy Now</button>
+			</div>
+			<div class="item" id="three">
+				<img src="images/brjacket.png" alt="Item 3">
+				<h5>Brown Jacket</h5>
+				<p class="price">$200</p>
+                <div class="sizes">
+                    <label for="cars">Size:</label>
+                    <select name="sizes" id="sizes">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                </div>
+				<button onclick="addItemToCart(2)" class="buttons">Buy Now</button>
+			</div>
+
+            <div class="item" id="four">
+				<img src="images/grblouse.png" alt="Item 1">
+				<h5>Green Blouse</h5>
+				<p class="price">$90</p>
+                <div class="sizes">
+                    <label for="cars">Size:</label>
+                    <select name="sizes" id="sizes">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                </div>
+				<button onclick="addItemToCart(3)" class="buttons">Buy Now</button>
+			</div>
+			<div class="item" id="five">
+				<img src="images/ordress.png" alt="Item 2">
+				<h5>Orange Dress</h5>
+				<p class="price">$140</p>
+                <div class="sizes">
+                    <label for="cars">Size:</label>
+                    <select name="sizes" id="sizes">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                </div>
+				<button onclick="addItemToCart(4)" class="buttons">Buy Now</button>
+			</div>
+			<div class="item" id="six">
+				<img src="images/pndress.png" alt="Item 3">
+				<h5>Pink Dress</h5>
+				<p class="price">$190</p>
+                <div class="sizes">
+                    <label for="cars">Size:</label>
+                    <select name="sizes" id="sizes">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                </div>
+				<button onclick="addItemToCart(5)" class="buttons">Buy Now</button>
+			</div>
+		</section>
+        <!--Shopping cart part-->
+		<div>
+            <div class="cart">
+                <h2>Shopping Cart</h2>
+                <div id="items"></div>
+                <div id="tax"></div>
+                <div id="total"></div>
+              </div>          
+    </div>
+	</main>
+
+	<script src="js/shop.js"></script>
+</body>
+</html>

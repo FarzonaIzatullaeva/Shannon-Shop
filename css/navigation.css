@@ -1,0 +1,80 @@
+/*styles for body*/
+
+header {
+	background-image: url(/images/3banner.png);
+    /* background-repeat: no-repeat; */
+	padding: 20px;
+	text-align: center;
+}
+
+
+.nav_container{ /*ul class*/
+    display: flex; 
+    align-items: center; /*vertically centered*/
+    justify-content: center; /*horizontally centered*/
+    padding: 0; 
+
+}
+
+a, a:hover{
+    text-decoration: none;
+
+}
+
+a{
+    color: black;
+}
+
+ul>li{
+    list-style: none;
+    /* background-color: rgb(203, 235, 148); */
+    padding: 15px 30px;
+    width: 20%;
+    text-align: center;
+}
+
+/*styles for screen size 708px and less*/
+@media only screen and (max-width: 708px) {
+
+
+    .nav_container{
+        display: flex; 
+        flex-direction: column; 
+
+    }
+
+    ul > li{
+        width: 100%;
+        list-style: none;
+        /* background-color: rgb(136, 225, 255); */
+        text-align: center;
+    }
+
+
+    a{
+        color: black;
+    }
+}
+/*styles for screen size 1283px and biggers*/
+@media only screen and (min-width: 1283px){
+    
+    .nav_container{
+        display: flex;
+        align-items: center; /*vertically centered*/
+        justify-content: center; /*horizontally centered*/
+        padding: 0;
+        height: 6vh;
+
+    }
+
+    a{
+        font-size: 32px;
+    }
+}
+
+@media print{
+    body{
+        font-size: 12pt;
+        
+    }
+}
